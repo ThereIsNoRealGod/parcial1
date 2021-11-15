@@ -1,0 +1,312 @@
+----- GAMESS execution script 'rungms' -----
+This job is running on host chemcompute-node-0.novalocal
+under operating system Linux at Mon Nov 15 04:12:00 UTC 2021
+SLURM has assigned the following compute nodes to this run:
+chemcompute-node-0
+Available scratch disk space (Kbyte units) at beginning of the job is
+Filesystem     1K-blocks     Used Available Use% Mounted on
+/dev/sda1       62903276 16721092  46182184  27% /
+GAMESS temporary binary files will be written to /scratch/306656
+GAMESS supplementary output files will be written to /data/slurm/342670
+Copying input file 342670.inp to your run's scratch directory...
+The generated host list is
+chemcompute-node-0.novalocal
+
+ Distributed Data Interface kickoff program.
+ Initiating 1 compute processes on 1 nodes to run the following command:
+ /data/gamess-2019R1-ddi/gamess.00.x 342670 
+
+          ******************************************************
+          *         GAMESS VERSION = 30 JUN 2019 (R1)          *
+          *             FROM IOWA STATE UNIVERSITY             *
+          * M.W.SCHMIDT, K.K.BALDRIDGE, J.A.BOATZ, S.T.ELBERT, *
+          *   M.S.GORDON, J.H.JENSEN, S.KOSEKI, N.MATSUNAGA,   *
+          *          K.A.NGUYEN, S.J.SU, T.L.WINDUS,           *
+          *       TOGETHER WITH M.DUPUIS, J.A.MONTGOMERY       *
+          *         J.COMPUT.CHEM.  14, 1347-1363(1993)        *
+          **************** 64 BIT LINUX VERSION ****************
+
+  SINCE 1993, STUDENTS AND POSTDOCS WORKING AT IOWA STATE UNIVERSITY
+  AND ALSO IN THEIR VARIOUS JOBS AFTER LEAVING ISU HAVE MADE IMPORTANT
+  CONTRIBUTIONS TO THE CODE:
+     IVANA ADAMOVIC, CHRISTINE AIKENS, YURI ALEXEEV, POOJA ARORA,
+     ANDREY ASADCHEV, ROB BELL, PRADIPTA BANDYOPADHYAY, JONATHAN BENTZ,
+     COLLEEN BERTONI, BRETT BODE, KURT BRORSEN, CALEB CARLIN, GALINA CHABAN,
+     WEI CHEN, CHEOL HO CHOI, PAUL DAY, ALBERT DEFUSCO, NUWAN DESILVA,
+     TIM DUDLEY, DMITRI FEDOROV, ALEX FINDLATER, GRAHAM FLETCHER, 
+     MARK FREITAG, KURT GLAESEMANN, ANASTASIA GUNINA,
+     DAN KEMP, GRANT MERRILL, NORIYUKI MINEZAWA, JONATHAN MULLIN,
+     TAKESHI NAGATA, SEAN NEDD, HEATHER NETZLOFF, BOSILJKA NJEGIC, RYAN OLSON,
+     MIKE PAK, BUU PHAM,
+     SPENCER PRUITT, LUKE ROSKOP, JIM SHOEMAKER, LYUDMILA SLIPCHENKO,
+     TONY SMITH, SAROM SOK LEANG, JIE SONG, TETSUYA TAKETSUGU, SIMON WEBB,
+     PENG XU, SOOHAENG YOO, FEDERICO ZAHARIEV
+
+  ADDITIONAL CODE HAS BEEN PROVIDED BY COLLABORATORS IN OTHER GROUPS:
+     IOWA STATE UNIVERSITY:
+          JOE IVANIC, AARON WEST, LAIMUTIS BYTAUTAS, KLAUS RUEDENBERG
+     UNIVERSITY OF TOKYO: KIMIHIKO HIRAO, TAKAHITO NAKAJIMA,
+          TAKAO TSUNEDA, MUNEAKI KAMIYA, SUSUMU YANAGISAWA,
+          KIYOSHI YAGI, MAHITO CHIBA, SEIKEN TOKURA, NAOAKI KAWAKAMI
+     UNIVERSITY OF AARHUS: FRANK JENSEN
+     UNIVERSITY OF IOWA: VISVALDAS KAIRYS, HUI LI
+     NATIONAL INST. OF STANDARDS AND TECHNOLOGY: WALT STEVENS, DAVID GARMER
+     UNIVERSITY OF PISA: BENEDETTA MENNUCCI, JACOPO TOMASI
+     UNIVERSITY OF MEMPHIS: HENRY KURTZ, PRAKASHAN KORAMBATH
+     UNIVERSITY OF ALBERTA: TOBY ZENG, MARIUSZ KLOBUKOWSKI
+     UNIVERSITY OF NEW ENGLAND: MARK SPACKMAN
+     MIE UNIVERSITY: HIROAKI UMEDA
+     NAT. INST. OF ADVANCED INDUSTRIAL SCIENCE AND TECHNOLOGY: KAZUO KITAURA
+     MICHIGAN STATE UNIVERSITY:
+          KAROL KOWALSKI, MARTA WLOCH, JEFFREY GOUR, JESSE LUTZ,
+          WEI LI, JUN SHEN, J. EMILIANO DEUSTUA, PIOTR PIECUCH
+     UNIVERSITY OF MINNESOTA:
+          YINAN SHU
+     UNIVERSITY OF SILESIA: MONIKA MUSIAL, STANISLAW KUCHARSKI
+     FACULTES UNIVERSITAIRES NOTRE-DAME DE LA PAIX:
+          OLIVIER QUINET, BENOIT CHAMPAGNE
+     UNIVERSITY OF CALIFORNIA - SANTA BARBARA: BERNARD KIRTMAN
+     INSTITUTE FOR MOLECULAR SCIENCE:
+          KAZUYA ISHIMURA, MICHIO KATOUDA, AND SHIGERU NAGASE
+     UNIVERSITY OF NOTRE DAME: ANNA POMOGAEVA, DAN CHIPMAN
+     KYUSHU UNIVERSITY:
+          HARUYUKI NAKANO,
+          FENG LONG GU, JACEK KORCHOWIEC, MARCIN MAKOWSKI, AND YURIKO AOKI,
+          HIROTOSHI MORI AND EISAKU MIYOSHI
+     PENNSYLVANIA STATE UNIVERSITY:
+          TZVETELIN IORDANOV, CHET SWALINA, JONATHAN SKONE,
+          SHARON HAMMES-SCHIFFER
+     WASEDA UNIVERSITY:
+          MASATO KOBAYASHI, TOMOKO AKAMA, TSUGUKI TOUMA,
+          TAKESHI YOSHIKAWA, YASUHIRO IKABATA, JUNJI SEINO,
+          YUYA NAKAJIMA, HIROMI NAKAI
+     NANJING UNIVERSITY: SHUHUA LI
+     UNIVERSITY OF NEBRASKA:
+          PEIFENG SU, DEJUN SI, NANDUN THELLAMUREGE, YALI WANG, HUI LI
+     UNIVERSITY OF ZURICH: ROBERTO PEVERATI, KIM BALDRIDGE
+     N. COPERNICUS UNIVERSITY AND JACKSON STATE UNIVERSITY:
+          MARIA BARYSZ
+     UNIVERSITY OF COPENHAGEN: Jimmy Kromann, CASPER STEINMANN
+     TOKYO INSTITUTE OF TECHNOLOGY: HIROYA NAKATA
+     NAGOYA UNIVERSITY: YOSHIO NISHIMOTO, STEPHAN IRLE
+     MOSCOW STATE UNIVERSITY: VLADIMIR MIRONOV
+     A.N.NESMEYANOV INSTITUTE OF ORGANOELEMENT COMPOUNDS OF RUSSIAN ACADEMY OF SCIENCES:
+          IGOR S. GERASIMOV
+
+ EXECUTION OF GAMESS BEGUN Mon Nov 15 04:12:00 2021
+
+            ECHO OF THE FIRST FEW INPUT CARDS -
+ INPUT CARD>!File created by the GAMESS Input Deck Generator Plugin for Avogadro            
+ INPUT CARD> $BASIS GBASIS=PM3 $END                                                         
+ INPUT CARD> $CONTRL SCFTYP=RHF RUNTYP=OPTIMIZE NZVAR=1 mult=1  ICHARG=0 $END               
+ INPUT CARD> $STATPT hssend=.t. OPTTOL=0.0005 NSTEP=50 $END                                 
+ INPUT CARD> $STATPT HESS=calc ihrep=5 $END                                                 
+ INPUT CARD> $FORCE nvib=2 $END                                                             
+ INPUT CARD> $ZMAT DLC=.t. auto=.t. nonvdw(1)=1,4,3,0 $END                                  
+ INPUT CARD> $ZMAT IFZMAT(1)=1,1,4,1,3,9 fvalue(1)=2.00,2.00 $END                           
+ INPUT CARD>                                                                                
+ INPUT CARD>                                                                                
+ INPUT CARD> $DATA                                                                          
+ INPUT CARD>Title                                                                           
+ INPUT CARD>C1                                                                              
+ INPUT CARD>B     5.0     3.10684    -0.26135    -2.56996                                   
+ INPUT CARD>C     6.0     1.44271     0.43288     0.32103                                   
+ INPUT CARD>C     6.0     2.89938     0.48030    -0.04998                                   
+ INPUT CARD>C     6.0     3.59949    -0.57592    -0.57376                                   
+ INPUT CARD>C     6.0     5.07711    -0.27001    -0.43903                                   
+ INPUT CARD>C     6.0     5.08945     1.25411    -0.44496                                   
+ INPUT CARD>C     6.0     3.79900     1.63730     0.27272                                   
+ INPUT CARD>H     1.0     2.39901    -1.12656    -2.96091                                   
+ INPUT CARD>H     1.0     2.54926     0.70019    -2.01629                                   
+ INPUT CARD>H     1.0     4.03507    -0.01196    -3.26057                                   
+ INPUT CARD>H     1.0     0.99392    -0.54426     0.04257                                   
+ INPUT CARD>H     1.0     0.89702     1.24136    -0.20825                                   
+ INPUT CARD>H     1.0     1.33417     0.57811     1.41581                                   
+ INPUT CARD>H     1.0     3.16341    -1.59135    -0.61685                                   
+ INPUT CARD>H     1.0     5.71751    -0.69743    -1.23978                                   
+ INPUT CARD>H     1.0     5.40667    -0.65331     0.55151                                   
+ INPUT CARD>H     1.0     4.96635     1.56445    -1.50693                                   
+ INPUT CARD>H     1.0     6.01378     1.73960    -0.06744                                   
+ INPUT CARD>H     1.0     3.43237     2.62131    -0.09026                                   
+ INPUT CARD>H     1.0     3.92733     1.65594     1.37640                                   
+ INPUT CARD> $END                                                                           
+    1000000 WORDS OF MEMORY AVAILABLE
+
+     BASIS OPTIONS
+     -------------
+     GBASIS=PM3          IGAUSS=       0      POLAR=NONE    
+     NDFUNC=       0     NFFUNC=       0     DIFFSP=       F
+     NPFUNC=       0      DIFFS=       F     BASNAM=        
+
+
+     RUN TITLE
+     ---------
+ Title                                                                           
+
+ THE POINT GROUP OF THE MOLECULE IS C1      
+ THE ORDER OF THE PRINCIPAL AXIS IS     0
+
+ ATOM      ATOMIC                      COORDINATES (BOHR)
+           CHARGE         X                   Y                   Z
+ B           5.0     5.8710762877       -0.4938798869       -4.8565201994
+ C           6.0     2.7263265797        0.8180245856        0.6066587338
+ C           6.0     5.4790337343        0.9076353919       -0.0944485049
+ C           6.0     6.8020497955       -1.0883309908       -1.0842491827
+ C           6.0     9.5943467095       -0.5102449139       -0.8296464004
+ C           6.0     9.6176659282        2.3699242585       -0.8408524755
+ C           6.0     7.1790690274        3.0940483597        0.5153660714
+ H           1.0     4.5334715418       -2.1288897087       -5.5953085743
+ H           1.0     4.8174028715        1.3231672393       -3.8102356118
+ H           1.0     7.6251766413       -0.0226011228       -6.1615838638
+ H           1.0     1.8782364537       -1.0285022661        0.0804456353
+ H           1.0     1.6951220055        2.3458302521       -0.3935354369
+ H           1.0     2.5212157210        1.0924694908        2.6754929507
+ H           1.0     5.9779780868       -3.0072154506       -1.1656774755
+ H           1.0    10.8045272321       -1.3179515956       -2.3428444851
+ H           1.0    10.2171248060       -1.2345768850        1.0422027795
+ H           1.0     9.3850406591        2.9563818215       -2.8476847827
+ H           1.0    11.3643963504        3.2873673282       -0.1274431206
+ H           1.0     6.4862387885        4.9535576289       -0.1705666677
+ H           1.0     7.4215775634        3.1292728521        2.6010188495
+
+          INTERNUCLEAR DISTANCES (ANGS.)
+          ------------------------------
+
+                1 B          2 C          3 C          4 C          5 C     
+
+   1 B       0.0000000    3.4072140    2.6350301 *  2.0800175 *  2.9022235 *
+   2 C       3.4072140    0.0000000    1.5039231 *  2.5436247 *  3.7789693  
+   3 C       2.6350301 *  1.5039231 *  0.0000000    1.3711675 *  2.3359865 *
+   4 C       2.0800175 *  2.5436247 *  1.3711675 *  0.0000000    1.5149568 *
+   5 C       2.9022235 *  3.7789693    2.3359865 *  1.5149568 *  0.0000000  
+   6 C       3.2776495    3.8157400    2.3560980 *  2.3633832 *  1.5241815 *
+   7 C       3.4878055    2.6467081 *  1.5007000 *  2.3779561 *  2.4037439 *
+   8 H       1.1842523 *  3.7573252    3.3624221    2.7281572 *  3.7770063  
+   9 H       1.2417750 *  2.5998024 *  2.0093060 *  2.1937029 *  3.1335384  
+  10 H       1.1835322 *  4.4436552    3.4409301    2.7796994 *  3.0188616  
+  11 H       3.3719107    1.1107453 *  2.1654252 *  2.6776594 *  4.1206301  
+  12 H       3.5663870    1.1097544 *  2.1479542 *  3.2771097    4.4509158  
+  13 H       4.4422308    1.1096918 *  2.1466228 *  3.2282888    4.2625507  
+  14 H       2.3636283 *  2.8174340 *  2.1639749 *  1.1059478 *  2.3323394 *
+  15 H       2.9622867 *  4.6890984    3.2778848    2.2235908 *  1.1108558 *
+  16 H       3.8969765    4.1165409    2.8166230 *  2.1302867 *  1.1120693 *
+  17 H       2.8144903 *  4.1277024    2.7514450 *  2.7056046 *  2.1255403 *
+  18 H       4.3262810    4.7700217    3.3594090    3.3833104    2.2481019 *
+  19 H       3.8163609    2.9861568 *  2.2067226 *  3.2378976    3.3446288  
+  20 H       4.4635145    2.9636157 *  2.1150344 *  2.9819125 *  2.8856652 *
+
+                6 C          7 C          8 H          9 H         10 H     
+
+   1 B       3.2776495    3.4878055    1.1842523 *  1.2417750 *  1.1835322 *
+   2 C       3.8157400    2.6467081 *  3.7573252    2.5998024 *  4.4436552  
+   3 C       2.3560980 *  1.5007000 *  3.3624221    2.0093060 *  3.4409301  
+   4 C       2.3633832 *  2.3779561 *  2.7281572 *  2.1937029 *  2.7796994 *
+   5 C       1.5241815 *  2.4037439 *  3.7770063    3.1335384    3.0188616  
+   6 C       0.0000000    1.5255033 *  4.3858935    3.0378398    3.2622554  
+   7 C       1.5255033 *  0.0000000    4.4783096    2.7712077 *  3.9063955  
+   8 H       4.3858935    4.4783096    0.0000000    2.0620130 *  2.0022042 *
+   9 H       3.0378398    2.7712077 *  2.0620130 *  0.0000000    2.0647086 *
+  10 H       3.2622554    3.9063955    2.0022042 *  2.0647086 *  0.0000000  
+  11 H       4.4994651    3.5609896    3.3666368    2.8647239 *  4.5213571  
+  12 H       4.1991265    2.9680951 *  3.9293964    2.5083402 *  4.5535509  
+  13 H       4.2451818    2.9161490 *  4.8161667    3.6428914    5.4324556  
+  14 H       3.4403225    3.4087373    2.5089748 *  2.7544088 *  3.2005499  
+  15 H       2.1987966 *  3.3792456    3.7628292    3.5488192    2.7173637 *
+  16 H       2.1752775 *  2.8123337 *  4.6483415    4.0731255    4.1017765  
+  17 H       1.1132137 *  2.1295932 *  3.9933479    2.6170054 *  2.5352720 *
+  18 H       1.1102287 *  2.2430837 *  5.4455123    4.1086845    4.1447961  
+  19 H       2.1773750 *  1.1110570 *  4.8327005    2.8601009 *  4.1651199  
+  20 H       2.1975765 *  1.1112721 *  5.3749722    3.7845582    4.9289947  
+
+               11 H         12 H         13 H         14 H         15 H     
+
+   1 B       3.3719107    3.5663870    4.4422308    2.3636283 *  2.9622867 *
+   2 C       1.1107453 *  1.1097544 *  1.1096918 *  2.8174340 *  4.6890984  
+   3 C       2.1654252 *  2.1479542 *  2.1466228 *  2.1639749 *  3.2778848  
+   4 C       2.6776594 *  3.2771097    3.2282888    1.1059478 *  2.2235908 *
+   5 C       4.1206301    4.4509158    4.2625507    2.3323394 *  1.1108558 *
+   6 C       4.4994651    4.1991265    4.2451818    3.4403225    2.1987966 *
+   7 C       3.5609896    2.9680951 *  2.9161490 *  3.4087373    3.3792456  
+   8 H       3.3666368    3.9293964    4.8161667    2.5089748 *  3.7628292  
+   9 H       2.8647239 *  2.5083402 *  3.6428914    2.7544088 *  3.5488192  
+  10 H       4.5213571    4.5535509    5.4324556    3.2005499    2.7173637 *
+  11 H       0.0000000    1.8057517 *  1.8058994 *  2.4975826 *  4.8969567  
+  12 H       1.8057517 *  0.0000000    1.8079191 *  3.6507155    5.2971770  
+  13 H       1.8058994 *  1.8079191 *  0.0000000    3.4906135    5.2813663  
+  14 H       2.4975826 *  3.6507155    3.4906135    0.0000000    2.7767898 *
+  15 H       4.8969567    5.2971770    5.2813663    2.7767898 *  0.0000000  
+  16 H       4.4433405    4.9501467    4.3415050    2.6976285 *  1.8185950 *
+  17 H       4.7568696    4.2837371    4.7652919    3.7419124    2.3982726 *
+  18 H       5.5160777    5.1428886    5.0445851    4.4183355    2.7205279 *
+  19 H       3.9980640    2.8889762 *  3.2932289    4.2539559    4.1901427  
+  20 H       3.9019068    3.4446728    2.8085137 *  3.8860663    3.9480999  
+
+               16 H         17 H         18 H         19 H         20 H     
+
+   1 B       3.8969765    2.8144903 *  4.3262810    3.8163609    4.4635145  
+   2 C       4.1165409    4.1277024    4.7700217    2.9861568 *  2.9636157 *
+   3 C       2.8166230 *  2.7514450 *  3.3594090    2.2067226 *  2.1150344 *
+   4 C       2.1302867 *  2.7056046 *  3.3833104    3.2378976    2.9819125 *
+   5 C       1.1120693 *  2.1255403 *  2.2481019 *  3.3446288    2.8856652 *
+   6 C       2.1752775 *  1.1132137 *  1.1102287 *  2.1773750 *  2.1975765 *
+   7 C       2.8123337 *  2.1295932 *  2.2430837 *  1.1110570 *  1.1112721 *
+   8 H       4.6483415    3.9933479    5.4455123    4.8327005    5.3749722  
+   9 H       4.0731255    2.6170054 *  4.1086845    2.8601009 *  3.7845582  
+  10 H       4.1017765    2.5352720 *  4.1447961    4.1651199    4.9289947  
+  11 H       4.4433405    4.7568696    5.5160777    3.9980640    3.9019068  
+  12 H       4.9501467    4.2837371    5.1428886    2.8889762 *  3.4446728  
+  13 H       4.3415050    4.7652919    5.0445851    3.2932289    2.8085137 *
+  14 H       2.6976285 *  3.7419124    4.4183355    4.2539559    3.8860663  
+  15 H       1.8185950 *  2.3982726 *  2.7205279 *  4.1901427    3.9480999  
+  16 H       0.0000000    3.0576979    2.5451326 *  3.8772239    2.8638306 *
+  17 H       3.0576979    0.0000000    1.7888316 *  2.3402995 *  3.0661906  
+  18 H       2.5451326 *  1.7888316 *  0.0000000    2.7279316 *  2.5386899 *
+  19 H       3.8772239    2.3402995 *  2.7279316 *  0.0000000    1.8242851 *
+  20 H       2.8638306 *  3.0661906    2.5386899 *  1.8242851 *  0.0000000  
+
+  * ... LESS THAN  3.000
+
+
+ TOTAL NUMBER OF BASIS SET SHELLS             =   20
+ NUMBER OF CARTESIAN GAUSSIAN BASIS FUNCTIONS =   41
+ NUMBER OF ELECTRONS                          =   40
+ CHARGE OF MOLECULE                           =    0
+ SPIN MULTIPLICITY                            =    1
+ NUMBER OF OCCUPIED ORBITALS (ALPHA)          =   20
+ NUMBER OF OCCUPIED ORBITALS (BETA )          =   20
+ TOTAL NUMBER OF ATOMS                        =   20
+ THE NUCLEAR REPULSION ENERGY IS      304.6750786943
+
+ THE PARAMETERS USED IN THIS CALCULATION ARE DESCRIBED IN:
+
+  H: (PM3): J. J. P. STEWART, J. COMP. CHEM.     10, 209 (1989).                
+ DATA ARE NOT AVAILABLE FOR ELEMENT NO.  5
+  C: (PM3): J. J. P. STEWART, J. COMP. CHEM.     10, 209 (1989).                
+
+
+
+
+
+          SOME ELEMENTS HAVE BEEN SPECIFIED FOR WHICH
+          NO PARAMETERS ARE AVAILABLE.  CALCULATION STOPPED.
+
+ EXECUTION OF GAMESS TERMINATED -ABNORMALLY- AT Mon Nov 15 04:12:00 2021
+               580000  WORDS OF DYNAMIC MEMORY USED
+ STEP CPU TIME =     0.01 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    50.00%
+ ddikick.x: application process 0 quit unexpectedly.
+ ddikick.x: Sending kill signal to DDI processes.
+ ddikick.x: Execution terminated due to error(s).
+----- accounting info -----
+Files used on the master node chemcompute-node-0.novalocal were:
+-rw-r--r--. 1 chemcomp chemcomp     1339 Nov 15 04:12 /scratch/306656/342670.F05
+-rw-rw-r--. 1 chemcomp chemcomp 11468800 Nov 15 04:12 /scratch/306656/342670.F10
+Mon Nov 15 04:12:03 UTC 2021
+0.118u 0.068s 0:02.52 6.7%	0+0k 8+224io 0pf+0w
+Finishing Up...
+Looking for IR data...
+Looking for Raman data...
+vibramans not found
+Looking for thermodynamics data...
+Looking for UV-Vis data...
+306656
